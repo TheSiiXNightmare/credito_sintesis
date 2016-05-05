@@ -1,14 +1,14 @@
 <?php
 	require_once ("conexion.php");
 
-	$contrasena = md5($_GET['pass']);
-	$user= $_GET['user'];
+	$contrasena = mysql_real_escape_string($_GET['pass']);
+	$contrasena = md5($contrasena);
+	$user = mysql_real_escape_string($_GET['user']);
 
 	$sql = "INSERT INTO user(user_name, user_pass)VALUES('$user','$contrasena')";
-	echo $sql;
 	if ($conn->query($sql) === TRUE) {
-   		echo "Usuario creado";
+   		echo "1";
 	} else {
-   		echo "Error al crear usuario";
+   		echo "0";
 	}
 ?>

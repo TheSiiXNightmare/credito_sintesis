@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-05-2016 a las 12:05:56
+-- Tiempo de generación: 05-05-2016 a las 01:28:59
 -- Versión del servidor: 5.6.26
 -- Versión de PHP: 5.6.12
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `partida` (
   `partida_id` int(11) NOT NULL,
   `partida_user_nik` varchar(20) COLLATE utf8_bin NOT NULL,
-  `partida_score` int(11) NOT NULL
+  `partida_score` decimal(7,3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `partida` (
 CREATE TABLE IF NOT EXISTS `user` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(20) COLLATE utf8_bin NOT NULL,
-  `user_pass` int(11) NOT NULL,
+  `user_pass` varchar(50) COLLATE utf8_bin NOT NULL,
   `user_nik` varchar(20) COLLATE utf8_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
