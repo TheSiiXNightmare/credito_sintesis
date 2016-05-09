@@ -1,9 +1,187 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-	<title>TheSiiXNightmare</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TheSiiXNightmare</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-esto es el puto indice
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" id="minus" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light"></span>TheSiiXNightmare
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Conocenos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">first nightmare</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#login">login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Redes</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div id="titulo" class="col-md-8 col-md-offset-2">
+                        <img id="imgTitulo" class="brand-heading" src="http://thesiixnightmare.esy.es/img/ThSiiXNightamre_ajustada.png">
+                        <p class="intro-text">Let's play<br>Created by TheSiiXNigtmare.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 id="minus">Sobre TheSiiXNightmare</h2>
+                <p>TheSiiXNightmare es una asociacion que se creo entre dos amigos que querian hacer juegos juntos. A uno le gustaba la animación y al otro la programacion y a raiz de su amistad "SiiX" y "LastNightmare"&nbsp;, respectivamente, decidieron hacer esta asociación TheSiiXNightmare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>First Nigtmare</h2>
+                    <p>Ya puedes descargarte nuestro primer titulo. Es un sencillo juego que consiste en recoger 10 monedas en el menor tiempo posible. Es rápido y sencillo ideal para competir con tus amigos para ver quien consigue estar en el puesto #1 del ranking.</p>
+                    <a href="http://www.mediafire.com/download/xybkg272s9alsj2/FirstNightmare+v1.3.2.exe" class="btn btn-default btn-lg">Descargar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Login</h2>
+                <form id="form-login" action="http://thesiixnightmare.esy.es/loginweb.php" method="get">
+                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="user" placeholder="USUARIO"/ ></p> 
+                 
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="pass" placeholder="CONTRASEÑA"/ ></p>
+
+                    <p id="bot"><a href="http://thesiixnightmare.esy.es/registro.html"><input  class="btn btn-default btn-lg" name="" type="button" id="" value="registrate" /></a>&nbsp;<input  class="btn btn-default btn-lg" name="" type="submit" id="" value="entra"/></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registro Section -->
+    <section id="register" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Registro</h2>
+                <form id="form-login" action="http://thesiixnightmare.esy.es/registro.php" method="get">
+                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="user" placeholder="USUARIO"/ ></p> 
+                 
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="pass" placeholder="CONTRASEÑA"/ ></p>
+
+                    <p id="bot"><input  class="btn btn-default btn-lg" name="" type="submit" id="" value="registrate"/></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>estamos abiertos a sugerencias</h2>
+                <p>Acabamos de empezar en esto y nadie nos puede aconsejar mejor sobre que podríamos hacer que alguien que halla probado alguno de nuestros juegos así que, os invitamos a que nos hagáis sugerencias de cosas a mejorar o que tipo de juego os gustaría, GRACIAS!</p>
+                <p><a href="mailto:thesiixnightmare@gmail.com">thesiixnightmare@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SiiXNightmare" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/2/103141516362752523148/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; TheSiiXNightmare</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
+
 </html>
