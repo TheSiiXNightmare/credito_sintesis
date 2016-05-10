@@ -3,7 +3,20 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+#rank-menu {
+	display: none;
+}
 
+#add_err {
+	display: none;
+}
+
+#registro-section {
+	display: none;
+}
+#registro-menu{
+	display: none;
+}
 #minus {
     text-transform: none;
 }

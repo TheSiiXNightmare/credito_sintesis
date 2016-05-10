@@ -1,20 +1,18 @@
 <?php
-	require_once ("conexion.php");
+require_once ("conexion.php");
+$login = $_REQUEST['name'];
+$contrasena = md5($_REQUEST['pass']);
 
-	$login = mysqli_real_escape_string($conn, $_GET['user']);
-	$contrasena = mysqli_real_escape_string($conn, $_GET['pass']);
-	$contrasena = md5($contrasena);
+//$con = mysqli_connect('mysql.hostinger.es', 'u415756471_alex', '9603496034', 'u415756471_bbdd') or die(mysqli_error());
 
-	$buscar = "SELECT * FROM user WHERE user_name='$login' AND user_pass='$contrasena'";
-	$sql = mysqli_query($conn, $buscar);
+$qry = "SELECT * FROM user WHERE user_name='$login' AND user_pass='$contrasena'";
 
-	if ($sql) {
-		$datos = mysqli_num_rows($sql);
-		if ($datos == 1 ) {
-			echo '1';
-			
-		}else {
-			echo '0';
-		}
+$res = mysqli_query($conn,$qry);
+
+if(mysqli_num_rows($res)==1) {
+	echo 'true';
 	}
+else {
+	echo 'false';
+}
 ?>

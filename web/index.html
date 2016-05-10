@@ -9,6 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/registro1.js"></script>
+
+
     <title>TheSiiXNightmare</title>
 
     <!-- Bootstrap Core CSS -->
@@ -58,8 +64,14 @@
                     <li>
                         <a class="page-scroll" href="#download">first nightmare</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#login">login</a>
+                    <li id="login-menu">
+                        <a class="page-scroll" href="#login-section">login</a>
+                    </li>
+                    <li id="registro-menu">
+                        <a class="page-scroll" href="#registro-section">register</a>
+                    </li>
+                    <li id="rank-menu">
+                        <a class="page-scroll" href="#registro-section">Ranking</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Redes</a>
@@ -112,33 +124,35 @@
     </section>
 
     <!-- Login Section -->
-    <section id="login" class="container content-section text-center">
+    <section id="login-section" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Login</h2>
-                <form id="form-login" action="http://thesiixnightmare.esy.es/loginweb.php" method="get">
-                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="user" placeholder="USUARIO"/ ></p> 
+                <form id="form-login" action="" method="post">
+                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="namelog" placeholder="USUARIO"/ ></p> 
                  
-                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="pass" placeholder="CONTRASEÑA"/ ></p>
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="passlog" placeholder="CONTRASEÑA"/ ></p>
 
-                    <p id="bot"><a href="http://thesiixnightmare.esy.es/registro.html"><input  class="btn btn-default btn-lg" name="" type="button" id="" value="registrate" /></a>&nbsp;<input  class="btn btn-default btn-lg" name="" type="submit" id="" value="entra"/></p>
+                    <p id="bot"><input  class="btn btn-default btn-lg" name="" type="button" id="register" value="registrate" />&nbsp;&nbsp;<input  class="btn btn-default btn-lg" name="" type="submit" id="login" value="entra"/></p>
                 </form>
+                <div id="add_err" class="col-lg-8 col-lg-offset-2"></div>
             </div>
         </div>
     </section>
 
     <!-- Registro Section -->
-    <section id="register" class="container content-section text-center">
+    <section id="registro-section" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Registro</h2>
-                <form id="form-login" action="http://thesiixnightmare.esy.es/registro.php" method="get">
-                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="user" placeholder="USUARIO"/ ></p> 
+                <form id="form-register" action="" method="post">
+                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="namereg" placeholder="USUARIO"/ ></p> 
                  
-                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="pass" placeholder="CONTRASEÑA"/ ></p>
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="passreg" placeholder="CONTRASEÑA"/ ></p>
 
-                    <p id="bot"><input  class="btn btn-default btn-lg" name="" type="submit" id="" value="registrate"/></p>
+                    <p id="bot"><input  class="btn btn-default btn-lg" name="" type="submit" id="registrar" value="registrarse"/></p>
                 </form>
+                <div id="add_err2" class="col-lg-8 col-lg-offset-2"></div>
             </div>
         </div>
     </section>
@@ -185,3 +199,4 @@
 </body>
 
 </html>
+		
