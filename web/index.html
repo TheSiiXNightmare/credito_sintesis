@@ -3,7 +3,8 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta http-equiv="conten-type" content="text/html; charset=UTF-8" />
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -11,8 +12,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/registro.js"></script>
-    <script src="js/registro1.js"></script>
 
 
     <title>TheSiiXNightmare</title>
@@ -76,6 +75,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Redes</a>
                     </li>
+                    <li id="logout-menu">
+                        <a class="page-scroll" id="logout"  href="#registro-section">Logout</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -105,7 +107,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2 id="minus">Sobre TheSiiXNightmare</h2>
-                <p>TheSiiXNightmare es una asociacion que se creo entre dos amigos que querian hacer juegos juntos. A uno le gustaba la animaci√≥n y al otro la programacion y a raiz de su amistad "SiiX" y "LastNightmare"&nbsp;, respectivamente, decidieron hacer esta asociaci√≥n TheSiiXNightmare.</p>
+                <p>TheSiiXNightmare es una asociacion que se creo entre dos amigos que querian hacer juegos juntos. A uno le gustaba la animaciÛn y al otro la programacion y a raiz de su amistad "SiiX" y "LastNightmare"&nbsp;, respectivamente, decidieron hacer esta asociaciÛn TheSiiXNightmare.</p>
             </div>
         </div>
     </section>
@@ -116,7 +118,7 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>First Nigtmare</h2>
-                    <p>Ya puedes descargarte nuestro primer titulo. Es un sencillo juego que consiste en recoger 10 monedas en el menor tiempo posible. Es r√°pido y sencillo ideal para competir con tus amigos para ver quien consigue estar en el puesto #1 del ranking.</p>
+                    <p>Ya puedes descargarte nuestro primer titulo. Es un sencillo juego que consiste en recoger 10 monedas en el menor tiempo posible. Es r·pido y sencillo ideal para competir con tus amigos para ver quien consigue estar en el puesto #1 del ranking.</p>
                     <a href="http://www.mediafire.com/download/xybkg272s9alsj2/FirstNightmare+v1.3.2.exe" class="btn btn-default btn-lg">Descargar</a>
                 </div>
             </div>
@@ -129,9 +131,10 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Login</h2>
                 <form id="form-login" action="" method="post">
-                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="namelog" placeholder="USUARIO"/ ></p> 
+                    <p></label><input class="btn btn-default btn-lg" name="user" type="text" value="" id="namelog" placeholder="USUARIO"/ ></p> 
                  
-                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="passlog" placeholder="CONTRASE√ëA"/ ></p>
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" value="" id="passlog" placeholder="CONTRASE—A"/ ></p>
+                    
 
                     <p id="bot"><input  class="btn btn-default btn-lg" name="" type="button" id="register" value="registrate" />&nbsp;&nbsp;<input  class="btn btn-default btn-lg" name="" type="submit" id="login" value="entra"/></p>
                 </form>
@@ -148,9 +151,13 @@
                 <form id="form-register" action="" method="post">
                     <p></label><input class="btn btn-default btn-lg" name="user" type="text" id="namereg" placeholder="USUARIO"/ ></p> 
                  
-                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="passreg" placeholder="CONTRASE√ëA"/ ></p>
+                    <p><input class="btn btn-default btn-lg" name="pass" type="password" id="passreg" placeholder="CONTRASE—A"/ ></p>
+<p><input class="btn btn-default btn-lg" name="pass" type="password" id="passlog2" placeholder="repite contraseÒa"/ ></p>
 
-                    <p id="bot"><input  class="btn btn-default btn-lg" name="" type="submit" id="registrar" value="registrarse"/></p>
+                    <p id="bot"><input  class="btn btn-default btn-lg" name="volver" type="button" id="volver_reg" value="volver" />&nbsp;&nbsp;<input  class="btn btn-default btn-lg" name="" type="submit" id="registrar" value="registrarse"/></p>
+
+
+
                 </form>
                 <div id="add_err2" class="col-lg-8 col-lg-offset-2"></div>
             </div>
@@ -162,7 +169,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>estamos abiertos a sugerencias</h2>
-                <p>Acabamos de empezar en esto y nadie nos puede aconsejar mejor sobre que podr√≠amos hacer que alguien que halla probado alguno de nuestros juegos as√≠ que, os invitamos a que nos hag√°is sugerencias de cosas a mejorar o que tipo de juego os gustar√≠a, GRACIAS!</p>
+                <p>Acabamos de empezar en esto y nadie nos puede aconsejar mejor sobre que podrÌamos hacer que alguien que halla probado alguno de nuestros juegos asÌ que, os invitamos a que nos hag·is sugerencias de cosas a mejorar o que tipo de juego os gustarÌa, GRACIAS!</p>
                 <p><a href="mailto:thesiixnightmare@gmail.com">thesiixnightmare@gmail.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
